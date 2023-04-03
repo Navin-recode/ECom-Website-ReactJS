@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 :root {
-  --color-black: #131921; 
+  --color-black: #131921;
   --color-brown: #3b4149;
   --color-yellow: #febd69;
   --color-darkbrown: #232f3e;
@@ -15,12 +15,13 @@
   --color-131921: #131921;
   --color-bf4800: #bf4800;
   --color-1c1c1b: #1c1c1b;
+  --color-fc353c00: #fc353c00;
 }
 .section-heading {
   font-size: 26px;
   line-height: 32px;
   font-weight: 500;
-  margin-bottom: 30px ;
+  margin-bottom: 30px;
 }
 .card-wrapper {
   background-color: rgb(255, 255, 255);
@@ -37,6 +38,9 @@ a {
 .form-control:focus {
   box-shadow: none;
   border-color: inherit;
+}
+.gap-5 {
+  gap: 5px;
 }
 .gap-10 {
   gap: 10px;
@@ -78,7 +82,7 @@ a {
   width: 35px;
   height: 35px;
 }
-.header-bottom .menu-links a, 
+.header-bottom .menu-links a,
 .header-bottom .dropdown button {
   color: white;
   font-size: 14px;
@@ -115,9 +119,9 @@ footer {
   border-top: 1px solid var(--color-brown);
 } */
 footer:not(:first-child) {
-  border-top: 1px solid rgba(255, 255, 255, 0.1) ;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-footer  .input-group-text {
+footer .input-group-text {
   background-color: var(--color-darkbrown);
   color: white;
   padding: 8px 17px;
@@ -132,14 +136,14 @@ footer  .input-group-text {
   top: 15%;
   left: 5%;
 }
-.main-banner-content  h4{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-    color: var(--color-bf4800);
-    margin: 0 0 12px;
-    letter-spacing: 0.3px;
-    text-transform: uppercase;
+.main-banner-content h4 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-bf4800);
+  margin: 0 0 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 .main-banner-content h5 {
   font-size: 42px;
@@ -159,14 +163,14 @@ footer  .input-group-text {
   top: 25%;
   left: 10%;
 }
-.small-banner-content h4{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 24px;
-    color: var(--color-bf4800);
-    margin: 0 0 12px;
-    letter-spacing: 0.3px;
-    text-transform: uppercase;
+.small-banner-content h4 {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-bf4800);
+  margin: 0 0 12px;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
 }
 .small-banner-content h5 {
   font-size: 22px;
@@ -190,7 +194,6 @@ footer  .input-group-text {
 
 .home-wrapper-2 {
   background-color: var(--color-f5f5f7);
-  
 }
 
 /* Home Wrapper-2 ends */
@@ -202,7 +205,6 @@ footer  .input-group-text {
   background-color: rgb(255, 255, 255);
   box-shadow: 0 0 10px #0000001a;
   padding: 15px;
-  
 }
 .categories > div {
   width: 25%;
@@ -215,20 +217,17 @@ footer  .input-group-text {
 .categories > div:nth-child(2),
 .categories > div:nth-child(3),
 .categories > div:nth-child(4) {
-  border-bottom: 1px solid ;
-  color: var(--color-ededed);
+  border-bottom: 1px solid #eee;
 }
 .categories > div:nth-child(1),
 .categories > div:nth-child(2),
 .categories > div:nth-child(3) {
-  border-right: 1px solid ;
-  color: var(--color-ededed);
+  border-right: 1px solid #eee;
 }
 .categories > div:nth-child(5),
 .categories > div:nth-child(6),
 .categories > div:nth-child(7) {
-  border-right: 1px solid ;
-  color: var(--color-ededed);
+  border-right: 1px solid #eee;
 }
 /* Categories Ends */
 /* Home wrapper-3 ends */
@@ -247,21 +246,21 @@ footer  .input-group-text {
   padding: 15px;
 }
 .blog-content.date {
-font-size: 13px;
-line-height: 24px;
-text-transform: uppercase;
-letter-spacing: 0;
-font-weight: 400;
-color: var(--color-777777);
-padding: 0;
+  font-size: 13px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: var(--color-777777);
+  padding: 0;
 }
 .blog-content h5 {
   font-size: 18px;
   color: var(--color-131921);
 }
 .blog-content p.desc {
- line-height: 22px;
- color: var(--color-777777); 
+  line-height: 22px;
+  color: var(--color-777777);
 }
 /* Blog Part ends */
 
@@ -273,9 +272,24 @@ padding: 0;
   border-radius: 10px;
   overflow: hidden;
 }
+.product-card .product-image {
+  height: 270px;
+}
+.product-card .product-image img {
+  object-fit: contain;
+}
+.product-card .product-image > img:last-child {
+  display: none;
+  transition: 0.3s;
+}
+.product-card:hover .product-image > img:nth-child(1) {
+  display: none;
+}
+.product-card:hover .product-image > img:last-child {
+  display: block;
+}
 .product-card:hover .action-bar {
   right: 15px;
-
 }
 .product-card .product-details h6 {
   color: var(--color-bf4800);
@@ -299,3 +313,14 @@ padding: 0;
   right: 15px;
 }
 /* Product card ends */
+
+/* Special Product starts */
+
+.special-product-card {
+  padding: 20px 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+
+/* Special Product ends */

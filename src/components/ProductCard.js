@@ -5,13 +5,23 @@ import { Link } from 'react-router-dom'
 const ProductCard = () => {
   return (
     <div className="col-3">
-      <div className="product-card position-relative">
+      <Link className="product-card position-relative">
         <div className="wishlist-icon position-absolute">
           <Link>
-          <img src="images/images/wish.svg" alt="wishlist" /></Link>
+            <img src="images/images/wish.svg" alt="wishlist" />
+          </Link>
         </div>
         <div className="product-image">
-          <img src="images/images/watch.jpg" alt="product image" />
+          <img
+            src="images/images/watch.jpg"
+            className="img-fluid"
+            alt="product image"
+          />
+          <img
+            src="images/images/watch-1.jpg"
+            className="img-fluid"
+            alt="product image"
+          />
         </div>
         <div className="product-details">
           <h6 className="brand">Havels</h6>
@@ -21,7 +31,7 @@ const ProductCard = () => {
           <ReactStars
             count={5}
             size={24}
-            value="3"
+            value={4}
             edit={false}
             activeColor="#ffd700"
           />
@@ -29,7 +39,7 @@ const ProductCard = () => {
         </div>
         <div className="action-bar position-absolute">
           <div className="d-flex flex-column gap-15">
-          <Link>
+            <Link>
               <img src="images/images/prodcompare.svg" alt="prodcompare" />
             </Link>
             <Link>
@@ -38,10 +48,9 @@ const ProductCard = () => {
             <Link>
               <img src="images/images/view.svg" alt="view" />
             </Link>
-            
           </div>
         </div>
-      </div>
+      </Link>
     </div>
   )
 }
