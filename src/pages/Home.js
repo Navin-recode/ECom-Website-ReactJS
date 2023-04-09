@@ -236,6 +236,69 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="famous-wrapper py-5 home-wrapper-2">
+        <div className="container-xxl">
+          <div className="row">
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img
+                  src="images/images/famous-1.jpg"
+                  className="img-fluid"
+                  alt="famous"
+                />
+                <div className="famous-content position-absolute">
+                  <h5>Big Screen</h5>
+                  <h6>Smart Watch Series 7</h6>
+                  <p>From $399 or $16.3/mo for 24mo. *</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img
+                  src="images/images/famous-2.jpg"
+                  className="img-fluid"
+                  alt="famous"
+                />
+                <div className="famous-content position-absolute">
+                  <h5 className='text-dark'>Computers</h5>
+                  <h6 className='text-dark'>Servers/Computers</h6>
+                  <p className='text-dark'>From $399 or $16.3/mo for 24mo.* </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img
+                  src="images/images/famous-3.jpg"
+                  className="img-fluid"
+                  alt="famous"
+                />
+                <div className="famous-content position-absolute">
+                  <h5>Mobile</h5>
+                  <h6>High End MobilePhones</h6>
+                  <p>From $3939 or 316.3/mo for 24mo.* </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-3">
+              <div className="famous-card position-relative">
+                <img
+                  src="images/images/famous-4.jpg"
+                  className="img-fluid"
+                  alt="famous"
+                />
+                <div className="famous-content position-absolute">
+                  <h5>Mobile</h5>
+                  <h6>High End MobilePhones</h6>
+                  <p>From $3939 or 316.3/mo for 24mo.* </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="special-wrapper py-5 home-wrapper-2">
         <div className="container-xxl">
           <div className="row">
@@ -244,6 +307,7 @@ const Home = () => {
             </div>
           </div>
           <div className="row">
+            <SpecialProduct />
             <SpecialProduct />
             <SpecialProduct />
             <SpecialProduct />

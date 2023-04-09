@@ -78,7 +78,7 @@ const Header = () => {
                     <img src="images/images/cart.svg" alt="cart" />
                     <div className="d-flex flex-column gap-10">
                       <span className="badge bg-white text-dark">0</span>
-                      <p className="mb-0"> ₹ 500</p>
+                      <p className="mb-0"> ₹ 500 </p>
                     </div>
                   </Link>
                 </div>
@@ -130,7 +130,7 @@ const Header = () => {
                 <div className="menu-links">
                   <div className="d-flex align-items-center gap-15">
                     <NavLink to="/">Home</NavLink>
-                    <NavLink to="/">Our Store</NavLink>
+                    <NavLink to="/ourstore">Our Store</NavLink>
                     <NavLink to="/">Blogs</NavLink>
                     <NavLink to="/">Contact</NavLink>
                   </div>
