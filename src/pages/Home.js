@@ -261,9 +261,9 @@ const Home = () => {
                   alt="famous"
                 />
                 <div className="famous-content position-absolute">
-                  <h5 className='text-dark'>Computers</h5>
-                  <h6 className='text-dark'>Servers/Computers</h6>
-                  <p className='text-dark'>From $399 or $16.3/mo for 24mo.* </p>
+                  <h5 className="text-dark">Computers</h5>
+                  <h6 className="text-dark">Servers/Computers</h6>
+                  <p className="text-dark">From $399 or $16.3/mo for 24mo.* </p>
                 </div>
               </div>
             </div>
@@ -374,10 +374,20 @@ const Home = () => {
             <div className="col-12">
               <h3 className="section-heading">Our Latest Blogs</h3>
             </div>
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
-            <BlogCard />
+          </div>
+          <div className="row">
+            <div className="col-3">
+              <BlogCard />
+            </div>
+            <div className="col-3">
+              <BlogCard />
+            </div>
+            <div className="col-3">
+              <BlogCard />
+            </div>
+            <div className="col-3">
+              <BlogCard />
+            </div>
           </div>
         </div>
       </section>

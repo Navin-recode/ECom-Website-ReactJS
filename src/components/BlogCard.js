@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 const BlogCard = () => {
   return (
-    <div className="col-3">
+    
       <div className="blog-card">
         <div className="card-image">
           <img
             src="images/images//blog-1.jpg"
-            className="img-fluid"
+            className="img-fluid w-100"
             alt="blog-1"
           />
         </div>
@@ -26,7 +26,7 @@ const BlogCard = () => {
           </Link>
         </div>
       </div>
-    </div>
+    
   )
 }
 

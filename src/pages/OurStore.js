@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import BreadCrumb from '../components/BreadCrumb'
 import Meta from '../components/Meta'
 import ReactStars from 'react-rating-stars-component'
+import ProductCard from '../components/ProductCard'
 
 function OurStore() {
+  const [grid, setGrid] = useState(4)
+  alert(grid)
+
   return (
     <>
       <Meta title={'Our Store'} />
@@ -178,36 +182,44 @@ function OurStore() {
                 <div>
                   <div className="random-products mb-3 d-flex">
                     <div className="w-50">
-                      <img src="images/images/watch.jpg" className='img-fluid' alt="watch" />
+                      <img
+                        src="images/images/watch.jpg"
+                        className="img-fluid"
+                        alt="watch"
+                      />
                     </div>
                     <div className="w-50">
                       <h5>
                         Kids headphones bulk pack 10 multi colored for students
                       </h5>
-                      <ReactStars 
-                      count={5}
-                      size={24}
-                      value={4}
-                      edit={false}
-                      activeColor="#ffd700"
+                      <ReactStars
+                        count={5}
+                        size={24}
+                        value={4}
+                        edit={false}
+                        activeColor="#ffd700"
                       />
                       <b>$300</b>
                     </div>
                   </div>
                   <div className="random-products d-flex">
                     <div className="w-50">
-                      <img src="images/images/watch.jpg" className='img-fluid' alt="watch" />
+                      <img
+                        src="images/images/watch.jpg"
+                        className="img-fluid"
+                        alt="watch"
+                      />
                     </div>
                     <div className="w-50">
                       <h5>
                         Kids headphones bulk pack 10 multi colored for students
                       </h5>
-                      <ReactStars 
-                      count={5}
-                      size={24}
-                      value={4}
-                      edit={false}
-                      activeColor="#ffd700"
+                      <ReactStars
+                        count={5}
+                        size={24}
+                        value={4}
+                        edit={false}
+                        activeColor="#ffd700"
                       />
                       <b>$300</b>
                     </div>
@@ -216,21 +228,82 @@ function OurStore() {
               </div>
             </div>
             <div className="col-9">
-              <div className="filter-sort-grid">
-                <div className="d-flex align-items-center gap-10">
-                  <p className="mb-0">Sort by:</p>
-                  <select name="" className='form-control form-select' id="">
-                    <option value="manual">Featured</option>
-                    <option value="best-selling" selected="selected">Best Selling</option>
-                    <option value="title-ascending">Alphabetically, A-Z</option>
-                    <option value="title-descending">Alphabetaically, Z-A</option>
-                    <option value="price-ascending">Price, low to high</option>
-                    <option value="price-descending">Price, high to low</option>
-                    <option value="created-asending">Date, old to new</option>
-                    <option value="created-descendig">Date, new to old</option>
-                  </select>
+              <div className="filter-sort-grid mb-3">
+                <div className="d-flex justify-content-between align-itmes-center">
+                  <div className="d-flex align-items-center gap-10">
+                    <p className="mb-0 d-block" style={{ width: '100px' }}>
+                      Sort by:
+                    </p>
+                    <select name="" className="form-control form-select" id="">
+                      <option value="manual">Featured</option>
+                      <option value="best-selling" selected="selected">
+                        Best Selling
+                      </option>
+                      <option value="title-ascending">
+                        Alphabetically, A-Z
+                      </option>
+                      <option value="title-descending">
+                        Alphabetaically, Z-A
+                      </option>
+                      <option value="price-ascending">
+                        Price, low to high
+                      </option>
+                      <option value="price-descending">
+                        Price, high to low
+                      </option>
+                      <option value="created-asending">Date, old to new</option>
+                      <option value="created-descendig">
+                        Date, new to old
+                      </option>
+                    </select>
+                  </div>
+                  <div className="d-flex align-items-center gap-10">
+                    <p className="totalproducts mb-0">21 Products</p>
+                    <div className="d-flex gap-10 align-items-center grid">
+                    <img
+                      onClick={() => {
+                        setGrid(3);
+                      }}
+                      src="images/images/gr4.svg"
+                      className="d-block img-fluid"
+                      alt="grid"
+                    />
+                    <img
+                      onClick={() => {
+                        setGrid(4);
+                      }}
+                      src="images/images/gr3.svg"
+                      className="d-block img-fluid"
+                      alt="grid"
+                    />
+                    <img
+                      onClick={() => {
+                        setGrid(6);
+                      }}
+                      src="images/images/gr2.svg"
+                      className="d-block img-fluid"
+                      alt="grid"
+                    />
+
+                    <img
+                      onClick={() => {
+                        setGrid(12);
+                      }}
+                      src="images/images/gr.svg"
+                      className="d-block img-fluid"
+                      alt="grid"
+                    />
+                    </div>
+                  </div>
                 </div>
               </div>
+
+              <div className="products-list pb-5">
+                <div className="d-flex gap-10 flex-wrap">
+                  <ProductCard grid={grid} />
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
