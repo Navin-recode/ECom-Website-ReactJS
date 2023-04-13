@@ -12,9 +12,9 @@ const ProductCard = (props) => {
   return (
     <>
       <div
-      // className={` ${
-      //   location.pathname == '/store' ? `gr-${grid}` : 'col-3'
-      // } `}
+        className={` ${
+          location.pathname == '/store' ? `gr-${grid}` : 'col-3'
+        } `}
       >
         <Link className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
@@ -68,10 +68,11 @@ const ProductCard = (props) => {
           </div>
         </Link>
       </div>
+
       <div
-      // className={` ${
-      //   location.pathname === '/store' ? `gr-${grid}` : 'col-3'
-      // } `}
+        className={` ${
+          location.pathname == '/store' ? `gr-${grid}` : 'col-3'
+        } `}
       >
         <Link className="product-card position-relative">
           <div className="wishlist-icon position-absolute">
@@ -104,9 +105,9 @@ const ProductCard = (props) => {
               activeColor="#ffd700"
             />
             <p className={`desc $ {grid === 12 ? "d-block" : "d-none"}`}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
-              recusandae minima temporibus, laborum alias officiis, saepe quasi
-              asperiores nam, numquam soluta iste a quis officia.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              vero, doloribus provident ex id debitis ipsa dolorem quo quod
+              culpa impedit. Modi, a libero!
             </p>
             <p className="price">$ 100.00</p>
           </div>
@@ -125,6 +126,7 @@ const ProductCard = (props) => {
           </div>
         </Link>
       </div>
+      
     </>
   )
 }

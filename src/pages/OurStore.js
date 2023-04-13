@@ -6,7 +6,7 @@ import ProductCard from '../components/ProductCard'
 
 function OurStore() {
   const [grid, setGrid] = useState(4)
-  alert(grid)
+  // alert(grid)
 
   return (
     <>
