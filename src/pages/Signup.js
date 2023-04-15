@@ -9,6 +9,7 @@ const Signup = () => {
       <Meta title={'Sign Up'}/>
       <BreadCrumb title="Sign Up" />
       <div className="login-wrapper home-wrapper-2 py-5">
+        <div className="container-xxl">
         <div className="row">
           <div className="col-12">
             <div className="auth-card">
@@ -47,15 +48,15 @@ const Signup = () => {
                   />
                 </div>
                 <div>
-    
                   <div className=" mt-3 d-flex justify-content-center gap-15 align-items-center">
                     <button className="button border-0">Login</button>
-                    <Link className="button signup">SignUp</Link>
+                    <Link className="button signup">Sign Up</Link>
                   </div>
                 </div>
               </form>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </>

@@ -263,6 +263,20 @@ footer .input-group-text {
   color: var(--color-777777);
   margin-right: 20px;
 }
+.single-blog-card h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--color-1c1c1b);
+}
+.single-blog-card a {
+  font-size: 18px;
+  color: var(--color-777777);
+  margin-bottom: 20px;
+}
+.single-blog-card p {
+  color: var(--color-777777);
+  font-size: 14px;
+}
 /* Blog Part ends */
 
 /* Product card starts */
@@ -581,3 +595,57 @@ footer .input-group-text {
   color: var(--color-777777);
 }
 /* Auth Card Ends */
+
+/* Policy pages starts */
+
+.policy {
+  background-color: white;
+  padding: 13px;
+}
+
+/* Policy pages ends */
+
+/* Main Product Page starts */
+
+.description-wrapper h4, 
+.reviews-wrapper h3 {
+  font-size: 26px;
+  color: var(--color-1c1c1b);
+  margin-bottom: 10px;
+}
+.description-wrapper p {
+  font-size: 14px;
+  color: var(--color-777777);
+}
+
+.review-inner-wrapper {
+  background-color: white;
+  padding: 30px;
+}
+.review-head {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+}
+.review-head h4 {
+  font-size: 18px;
+  color: var(--color-1c1c1b);
+}
+.review-head p,
+.review-head a {
+  font-size: 14px;
+  color: var(--color-777777);
+}
+.review-form h4 {
+  font-size: 16px;
+  color: var(--color-777777);
+}
+.review-form {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.253);
+}
+.review:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.review p {
+  font-size: 14px;
+  color: var(--color-777777);
+}
+/* Main Product Page ends */
