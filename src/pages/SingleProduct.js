@@ -5,6 +5,8 @@ import ProductCard from '../components/ProductCard'
 import ReactStars from 'react-rating-stars-component'
 import ReactImageZoom from 'react-image-zoom'
 import Color from '../components/Color'
+import { TbGitCompare } from 'react-icons/tb'
+import { AiOutlineHeart } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
 // import headphone from '../../public/images/images/headphone.jpg'
 
@@ -18,6 +20,15 @@ const SingleProduct = () => {
   }
 
   const [orderedProduct, setOrderedProduct] = useState(true)
+
+  const copyToClipboard = (text) => {
+    console.log('text', text)
+    var textField = document.createElement('textarea')
+    textField.innerText = text
+    document.execCommand('copy')
+    textField.remove()
+  }
+
   return (
     <>
       <Meta title={'Product Name'} />
@@ -84,7 +95,7 @@ const SingleProduct = () => {
                     Write a Review
                   </a>
                 </div>
-                <div className="border-bottom">
+                <div className="py-3">
                   <div className="d-flex gap-10 align-items-center my-2">
                     <h3 className="product-heading">Type :</h3>
                     <p className="product-data">Watch</p>
@@ -123,7 +134,7 @@ const SingleProduct = () => {
                     </div>
                   </div>
                   <div className="d-flex gap-10 flex-column  mt-2 mb-3">
-                    <h3 className="product-heading">Color :</h3> 
+                    <h3 className="product-heading">Color :</h3>
                     <Color />
                   </div>
                   <div className="d-flex align-items-center gap-15 flex-row mt-2 mb-3">
@@ -139,10 +150,46 @@ const SingleProduct = () => {
                         className="form-control"
                       />
                     </div>
-                    <div className='d-flex align-items-center gap-30 ms-5'>
-                    <button className="button border-0" type='submit'>Add To Cart</button>
-                    <button className="button signup">Buy It Now </button>
+                    <div className="d-flex align-items-center gap-30 ms-5">
+                      <button className="button border-0" type="submit">
+                        Add To Cart
+                      </button>
+                      <button className="button signup">Buy It Now </button>
                     </div>
+                  </div>
+                  <div className="d-flex align-items-center gap-15">
+                    <div>
+                      <a href="">
+                        <TbGitCompare className="fs-5 me-2" /> Add to Compare
+                      </a>
+                    </div>
+                    <div>
+                      <a href="">
+                        <AiOutlineHeart className="fs-5 me-2" /> Add to Wishlist
+                      </a>
+                    </div>
+                  </div>
+                  <div className="d-flex gap-10 flex-column my-3">
+                    <h3 className="product-heading">Shipping and Returns :</h3>
+                    <p className="product-data">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Soluta, fugiat cum debitis quisquam mollitia fuga nesciunt
+                      reiciendis eveniet labore magnam eius incidunt maiores
+                      deleniti? Cum repellat dolor expedita a deserunt!
+                    </p>
+                  </div>
+                  <div className="d-flex gap-10 flex-column my-3">
+                    <h3 className="product-heading">Product Link :</h3>
+                    <a
+                      href="javascript:void(0);"
+                      onClick={() => {
+                        copyToClipboard(
+                          'https://m.media-amazon.com/images/I/71IGPk09H-L._AC_UF894,1000_QL80_.jpg',
+                        )
+                      }}
+                    >
+                      Copy Product Link
+                    </a>
                   </div>
                 </div>
               </div>
