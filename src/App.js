@@ -38,6 +38,7 @@ const App = () => {
             <Route path="blogs" element={<Blog />} />
             <Route path='blog/:id' element={<SingleBlog />} />
             <Route path='cart' element={<Cart />} />
+            <Route path='checkout' element={<Checkout />} />
             <Route path="compare-product" element={<CompareProduct />} />
             <Route path="wishlist" element={<Wishlist />} />
             <Route path="Login" element={<Login />} />
@@ -48,7 +49,6 @@ const App = () => {
             <Route path='refund-policy' element={<RefundPolicy />} />
             <Route path='shipping-policy' element={<ShippingPolicy />} />
             <Route path='terms-and-conditions' element={<TermAndConditions />} />
-            <Route path='checkout' element={<Checkout />} />
           </Route>
         </Routes>
       </BrowserRouter>
