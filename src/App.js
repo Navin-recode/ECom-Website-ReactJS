@@ -22,6 +22,7 @@ import ShippingPolicy from './pages/ShippingPolicy'
 import TermAndConditions from './pages/TermAndConditions'
 import SingleProduct from './pages/SingleProduct'
 import Cart from './pages/Cart'
+import Checkout from './pages/Checkout'
 
 const App = () => {
   return (
@@ -47,7 +48,7 @@ const App = () => {
             <Route path='refund-policy' element={<RefundPolicy />} />
             <Route path='shipping-policy' element={<ShippingPolicy />} />
             <Route path='terms-and-conditions' element={<TermAndConditions />} />
-
+            <Route path='checkout' element={<Checkout />} />
           </Route>
         </Routes>
       </BrowserRouter>
