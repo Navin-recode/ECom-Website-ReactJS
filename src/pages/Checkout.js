@@ -1,6 +1,4 @@
 import React from 'react'
-import Meta from '../components/Meta'
-import BreadCrumb from '../components/BreadCrumb'
 import { Link } from 'react-router-dom'
 import { BsArrowBarLeft } from 'react-icons/bs'
 import watch from '../images/images/watch.jpg'
@@ -8,11 +6,9 @@ import watch from '../images/images/watch.jpg'
 const Checkout = () => {
   return (
     <React.Fragment>
-      <Meta title={'CheckOut'} />
-      <BreadCrumb title="CheckOut" />
       <div className="checout-wrapper">
         <div className="container-xxl">
-          <div className="row">
+          <div className="row mt-4">
             <div className="col-7">
               <div className="checkout-left-data">
                 <h3 className="website-name">DevCorner</h3>
@@ -22,25 +18,26 @@ const Checkout = () => {
                 >
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <Link className="text-dark" to="/cart">
+                      <Link className="text-dark total-price" to="/cart">
                         Cart
                       </Link>
                     </li>
-                    &nbsp; /
-                    <li className="breadcrumb-item active" aria-current="page">
+                    &nbsp; /&nbsp;
+                    <li className="breadcrumb-item active total-price" aria-current="page">
                       Information
                     </li>
                     &nbsp; /<li className="breadcrumb-item active">Shipping</li>
                     &nbsp; /
-                    <li className="breadcrumb-item active" aria-current="page">
-                      Payment
+                    <li className="breadcrumb-item active total-price" aria-current="page">
+                      Shipping
                     </li>
                   </ol>
                 </nav>
-                <h4 className="title">Contact Infomration</h4>
-                <p className="user-details">
+                <h4 className="title total">Contact Infomration</h4>
+                <p className="user-details total">
                   Navin Kukreja (Navinexpo2020@gmail.com)
                 </p>
+                <h4 className='mb-3'>Shipping Address</h4>
                 <form
                   action=""
                   className="d-flex flex-wrap gap-15 pb-5 justify-content-between"
