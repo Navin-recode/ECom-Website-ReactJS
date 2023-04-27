@@ -2,12 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { BsArrowBarLeft } from 'react-icons/bs'
 import watch from '../images/images/watch.jpg'
+import Container from '../components/Container'
 
 const Checkout = () => {
   return (
     <React.Fragment>
-      <div className="checout-wrapper">
-        <div className="container-xxl">
+      <Container class1="checout-wrapper">
+        
           <div className="row mt-4">
             <div className="col-7">
               <div className="checkout-left-data">
@@ -150,8 +151,8 @@ const Checkout = () => {
               </div>
             </div>
           </div>
-        </div>
-      </div>
+        
+      </Container>
     </React.Fragment>
   )
 }
